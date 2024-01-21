@@ -1,0 +1,22 @@
+specVersion: 0.0.2
+apiVersion: 0.0.2
+name: free_mint
+description: "This zkGraph will check the onchain activity of nft holders, to see if they are receiving any free mints "
+repository: https://github.com/arjanjohan/zkgraph-track-free-mints  
+dataSources:
+  - kind: ethereum
+    network: mainnet
+    event:
+      - address: "0x0000000000000000000000000000000000000001"
+        events: 
+          - "Transfer(address,address,uint256)"
+
+mapping:
+  language: wasm/assemblyscript
+  file: ./mapping.ts
+  handler: handleBlocks
+
+dataDestinations:
+  - kind: ethereum
+    network: mainnet
+    address: "0x0000000000000000000000000000000000000001"
