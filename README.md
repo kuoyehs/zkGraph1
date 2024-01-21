@@ -1,6 +1,8 @@
 # zkGraph ERC721NFT free mint tracker
 
-This zkGraph will monitor events on-chain to track ERC721NFT that are minted for free. When I saw the scholarship application form, there was only one hour left before the application deadline. I could only submit this simple repo first. I really hope to participate in your scholarship project.
+This zkGraph will monitor events on-chain to track ERC721NFT that are minted for free. The major difference between ERC721NFT and ERC1155NFT is the number of Etherium event's topic. ERC721NFT event has topic4 and ERC1155NFT event only have topic1,2 and 3. 
+
+When I saw the scholarship application form, there was only one hour left before the application deadline. I could only submit this simple repo first. I really hope to participate in your scholarship project.
 
 ## Usage CLI
 
